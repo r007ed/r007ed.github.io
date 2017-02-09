@@ -20,20 +20,33 @@
   }
   header{
     margin:0px;
-    display: flex;
     font-size:2em;
+    background-color: #111111;
+    background-color: rgba(0,0,0,0.2);
   }
-  .fg{
+  .fb{
+    display: flex;
+  }
+  .fg1{
     flex-grow: 1;
+  }
+  .fg2{
+    flex-grow: 2;
   }
   </style>
 </head>
 <body>
-  <header>
-  <div class="fg">
+  <header class="fb">
+  <div class="fg1">
     Placeholder Page
   </div>
   </header>
-  
+  <nav></nav>
+  <div class="fb">
+    <div class="fg2" style="border=:1px solid #EEE;">a</div>
+    <div class="fg2" style="border=:1px solid #EEE;">b</div>
+    <div class="fg1" style="border=:1px solid #EEE;">c</div>
+  </div>
+
 </body>
 </html>
