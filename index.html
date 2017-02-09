@@ -4,11 +4,11 @@
   <title>r007ed</title>
   <style>
   html{
-    background:#333;
-    background: radial-gradient(at top left, rgba(0,50,20,.25), rgba(0,100,100,.25), black) fixed,
-    radial-gradient(at bottom left, rgba(0,50,20,.25), rgba(0,100,100,.25), black) fixed,
-    radial-gradient(at bottom right, rgba(0,50,20,.25), rgba(0,100,100,.25), black) fixed,
-    radial-gradient(at top right, rgba(0,50,20,.25), rgba(0,100,100,.25), black) fixed;
+    background:#EFE;
+    background: radial-gradient(at top left, rgba(0,50,20,.5), rgba(255,255,255,.25), rgba(0,50,20,.25)) fixed,
+    radial-gradient(at bottom left, rgba(0,50,20,.5), rgba(255,255,255,.25), rgba(0,50,20,.25)) fixed,
+    radial-gradient(at bottom right, rgba(0,50,20,.5), rgba(255,255,255,.25), rgba(0,50,20,.25)) fixed,
+    radial-gradient(at top right, rgba(0,50,20,.5), rgba(255,255,0,.25), rgba(0,50,20,.25)) fixed;
     background-size: cover;
   }
 
@@ -17,12 +17,14 @@
     padding:0px;
     color:#EDDC78;
     font-size:16px;
+    font-family:monospace;
   }
   header{
     margin:0px;
     font-size:2em;
     background-color: #111111;
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(0,0,0,0.6);
+    padding:0.5em;
   }
   .fb{
     display: flex;
@@ -33,19 +35,53 @@
   .fg2{
     flex-grow: 2;
   }
+  .pane{
+    padding:0 1em;
+    border:3px solid #222;
+    border-radius:2em;
+    margin:1em;
+    background-color: #EFEFEF;
+    background-color: rgba(255,255,255,.5);
+    color:#123456;
+  }
+  .pane h1{
+    text-align: center;
+    border-bottom:1px dashed #000;
+  }
   </style>
 </head>
 <body>
   <header class="fb">
   <div class="fg1">
-    Placeholder Page
+    r007ed on github
   </div>
   </header>
   <nav></nav>
   <div class="fb">
-    <div class="fg2" style="border=:1px solid #EEE;">a</div>
-    <div class="fg2" style="border=:1px solid #EEE;">b</div>
-    <div class="fg1" style="border=:1px solid #EEE;">c</div>
+    <div class="fg2 pane" style="border=:1px solid #EEE;">
+      <h1>Application</h1>
+      <h2>Android</h2>
+      <ul>
+        <li><a href="https://play.google.com/store/apps/details?id=com.parxmedia.stackem&hl=en">Stackem</a></li>
+      </ul>
+      <h2>Web</h2>
+      <ul>
+        <li><a href="http://www.parxmedia.com/app/listRandom/">List Randomizer</a></li>
+      </ul>
+      <h2>Windows</h2>
+    </div>
+    <div class="fb fg2">
+      <div class="fg1 pane" style="border=:1px solid #EEE;">
+        <h1>Script</h1>
+        <h2>Perl</h2>
+        <h2>PHP</h2>
+        <h2>Powershell</h2>
+        <h2>VBA</h2>
+      </div>
+      <div class="fg1 pane" style="border=:1px solid #EEE;">
+        <h1>Why Not</h1>
+      </div>
+    </div>
   </div>
 
 </body>
