@@ -28,20 +28,28 @@
   }
   .fb{
     display: flex;
+    flex-flow: row wrap;
+    flex-wrap: wrap-reverse;
+    justify-content:space-around;
+    /* align-items: flex-start | flex-end | center | baseline | stretch; */
+
+    align-items: flex-end;
   }
-  .fg1{
-    flex-grow: 1;
+  .fg1, .fg2{
+    flex: 1;
   }
   .fg2{
     flex-grow: 2;
   }
+
   .pane{
     padding:0 1em;
-    border:3px solid #222;
-    border-radius:2em;
+    border:2px solid #222;
+    border:3px ridge rgba(0,0,0,0.5);
+    border-radius:0.25em;
     margin:1em;
     background-color: #EFEFEF;
-    background-color: rgba(255,255,255,.5);
+    background-color: rgba(255,255,255,.4);
     color:#123456;
   }
   .pane h1{
@@ -69,19 +77,43 @@
         <li><a href="http://www.parxmedia.com/app/listRandom/">List Randomizer</a></li>
       </ul>
       <h2>Windows</h2>
+      <ul>
+        <li>Coming Soon</li>
+      </ul>
     </div>
-    <div class="fb fg2">
-      <div class="fg1 pane" style="border=:1px solid #EEE;">
-        <h1>Script</h1>
-        <h2>Perl</h2>
-        <h2>PHP</h2>
-        <h2>Powershell</h2>
-        <h2>VBA</h2>
-      </div>
-      <div class="fg1 pane" style="border=:1px solid #EEE;">
-        <h1>Why Not</h1>
-      </div>
+
+    <div class="fg1 pane" style="border=:1px solid #EEE;">
+
+      <h1>Script</h1>
+      <h2>Javascript</h2>
+      <h2>Perl</h2>
+      <ul>
+        <li>textract</li>
+      </ul>
+      <h2>PHP</h2>
+      <ul>
+        <li>EDI Parser</li>
+        <li>Web Game</li>
+      </ul>
+      <h2>Powershell</h2>
+      <ul>
+        <li>office365 Controls</li>
+      </ul>
+      <h2>VBA</h2>
+      <ul>
+        <li>Outlook: attachmentExtract</li>
+      </ul>
     </div>
+
+    <div class="fg1 pane" style="border=:1px solid #EEE;">
+      <h1>@bout</h1>
+      <div style='width:50%; background:#000;margin:0 auto; color:#fff;text-align:center;line-height:300px;';>Portrait</div>
+      Name: Shawn Parker<br />
+      Site: http://www.parxmedia.com<br />
+
+    </div>
+
+
   </div>
 
 </body>
