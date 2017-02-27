@@ -10,14 +10,20 @@
     radial-gradient(at bottom right, rgba(0,50,20,.5), rgba(255,255,255,.25), rgba(0,50,20,.25)) fixed,
     radial-gradient(at top right, rgba(0,50,20,.5), rgba(255,255,0,.25), rgba(0,50,20,.25)) fixed;
     background-size: cover;
+    font-family: "Verdana", Sans-Serif;
+    font-size: 115%;
+    line-height: 1.5;
   }
-
+  body, html {
+    margin: 0;
+  }
   body{
-    margin:0px;
     padding:0px;
     color:#EDDC78;
     font-size:16px;
     font-family:monospace;
+    display: flex;
+    flex-direction:column;
   }
   header{
     margin:0px;
@@ -25,6 +31,7 @@
     background-color: #111111;
     background-color: rgba(0,0,0,0.6);
     padding:0.5em;
+    height:10vh;
   }
   .fb{
     display: flex;
@@ -32,7 +39,8 @@
     flex-wrap: wrap-reverse;
     justify-content:space-around;
     /* align-items: flex-start | flex-end | center | baseline | stretch; */
-
+    flex: 1;
+    overflow:auto;
     align-items: flex-end;
   }
   .fg1, .fg2{
@@ -51,6 +59,9 @@
     background-color: #EFEFEF;
     background-color: rgba(255,255,255,.4);
     color:#123456;
+    flex: 1;
+    height:80vh;
+    overflow:auto;
   }
   .pane h1{
     text-align: center;
@@ -78,7 +89,7 @@
       </ul>
       <h2>Windows</h2>
       <ul>
-        <li>Coming Soon</li>
+        <li>FileZilla log Viewer</li>
       </ul>
     </div>
 
